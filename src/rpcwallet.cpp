@@ -139,7 +139,7 @@ Value getnewaddress(CWallet* pWallet, const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "getnewaddress [account]\n"
-            "Returns a new HoboNickels address for receiving payments.  "
+            "Returns a new SwissCoin address for receiving payments.  "
             "If [account] is specified (recommended), it is added to the address book "
             "so payments received with the address will be credited to [account].");
 
@@ -206,7 +206,7 @@ Value getaccountaddress(CWallet* pWallet, const Array& params, bool fHelp)
     if (fHelp || params.size() != 1)
         throw runtime_error(
             "getaccountaddress <account>\n"
-            "Returns the current HoboNickels address for receiving payments to this account.");
+            "Returns the current SwissCoin address for receiving payments to this account.");
 
     // Parse the account first so we don't generate a key if there's an error
     string strAccount = AccountFromValue(params[0]);
@@ -223,7 +223,7 @@ Value stakeforcharity(CWallet *pWallet, const Array &params, bool fHelp)
 
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "stakeforcharity <HoboNickelsaddress> <percent>\n"
+            "stakeforcharity <SwissCoinaddress> <percent>\n"
             "Gives a percentage of a found stake to a different address, after stake matures\n"
             "Percent is a whole number 1 to 50.\n"
             "Set percentage to zero to turn off"
@@ -231,7 +231,7 @@ Value stakeforcharity(CWallet *pWallet, const Array &params, bool fHelp)
 
     CBitcoinAddress address(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid HoboNickels address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SwissCoin address");
 
     if (params[1].get_int() < 0)
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid parameter, expected valid percentage");
@@ -269,12 +269,12 @@ Value setaccount(CWallet* pWallet, const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
-            "setaccount <HoboNickelsaddress> <account>\n"
+            "setaccount <SwissCoinaddress> <account>\n"
             "Sets the account associated with the given address.");
 
     CBitcoinAddress address(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid HoboNickels address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SwissCoin address");
 
 
     string strAccount;
@@ -299,12 +299,12 @@ Value getaccount(CWallet* pWallet, const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "getaccount <HoboNickelsaddress>\n"
+            "getaccount <SwissCoinaddress>\n"
             "Returns the account associated with the given address.");
 
     CBitcoinAddress address(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid HoboNickels address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SwissCoin address");
 
     string strAccount;
     map<CTxDestination, string>::iterator mi = pWallet->mapAddressBook.find(address.Get());
@@ -339,13 +339,13 @@ Value sendtoaddress(CWallet* pWallet, const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 2 || params.size() > 4)
         throw runtime_error(
-            "sendtoaddress <HoboNickelsaddress> <amount> [comment] [comment-to]\n"
+            "sendtoaddress <SwissCoinaddress> <amount> [comment] [comment-to]\n"
             "<amount> is a real and is rounded to the nearest 0.000001"
             + HelpRequiringPassphrase(pWallet));
 
     CBitcoinAddress address(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid HoboNickels address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SwissCoin address");
 
     // Amount
     int64 nAmount = AmountFromValue(params[1]);
@@ -405,7 +405,7 @@ Value signmessage(CWallet* pWallet, const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "signmessage <HoboNickelsaddress> <message>\n"
+            "signmessage <SwissCoinaddress> <message>\n"
             "Sign a message with the private key of an address"
             + HelpRequiringPassphrase(pWallet));
 
@@ -441,7 +441,7 @@ Value verifymessage(CWallet* pWallet, const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 3)
         throw runtime_error(
-            "verifymessage <HoboNickelsaddress> <signature> <message>\n"
+            "verifymessage <SwissCoinaddress> <signature> <message>\n"
             "Verify a signed message");
 
     string strAddress  = params[0].get_str();
@@ -478,14 +478,14 @@ Value getreceivedbyaddress(CWallet* pWallet, const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
-            "getreceivedbyaddress <HoboNickelsaddress> [minconf=1]\n"
-            "Returns the total amount received by <HoboNickelsaddress> in transactions with at least [minconf] confirmations.");
+            "getreceivedbyaddress <SwissCoinaddress> [minconf=1]\n"
+            "Returns the total amount received by <SwissCoinaddress> in transactions with at least [minconf] confirmations.");
 
     // Bitcoin address
     CBitcoinAddress address = CBitcoinAddress(params[0].get_str());
     CScript scriptPubKey;
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid HoboNickels address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SwissCoin address");
     scriptPubKey.SetDestination(address.Get());
     if (!IsMine(*pWallet,scriptPubKey))
         return (double)0.0;
@@ -706,14 +706,14 @@ Value sendfrom(CWallet* pWallet, const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 3 || params.size() > 6)
         throw runtime_error(
-            "sendfrom <fromaccount> <toHoboNickelsaddress> <amount> [minconf=1] [comment] [comment-to]\n"
+            "sendfrom <fromaccount> <toSwissCoinaddress> <amount> [minconf=1] [comment] [comment-to]\n"
             "<amount> is a real and is rounded to the nearest 0.000001"
             + HelpRequiringPassphrase(pWallet));
 
     string strAccount = AccountFromValue(params[0]);
     CBitcoinAddress address(params[1].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid HoboNickels address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SwissCoin address");
     int64 nAmount = AmountFromValue(params[2]);
 
     if (nAmount < MIN_TXOUT_AMOUNT)
@@ -773,7 +773,7 @@ Value sendmany(CWallet* pWallet, const Array& params, bool fHelp)
     {
         CBitcoinAddress address(s.name_);
         if (!address.IsValid())
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid HoboNickels address: ")+s.name_);
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid SwissCoin address: ")+s.name_);
 
         if (setAddress.count(address))
             throw JSONRPCError(RPC_INVALID_PARAMETER, string("Invalid parameter, duplicated address: ")+s.name_);
@@ -836,7 +836,7 @@ static CScript _createmultisig(CWallet* pWallet, const Array& params)
     {
         const std::string& ks = keys[i].get_str();
 
-        // Case 1: HoboNickels address and we have full public key:
+        // Case 1: SwissCoin address and we have full public key:
         CBitcoinAddress address(ks);
         if (address.IsValid())
         {
@@ -875,7 +875,7 @@ Value addmultisigaddress(CWallet* pWallet, const Array& params, bool fHelp)
   {
       string msg = "addmultisigaddress <nrequired> <'[\"key\",\"key\"]'> [account]\n"
           "Add a nrequired-to-sign multisignature address to the wallet\"\n"
-          "each key is a HoboNickels address or hex-encoded public key\n"
+          "each key is a SwissCoin address or hex-encoded public key\n"
           "If [account] is specified, assign address to [account].";
       throw runtime_error(msg);
   }
@@ -900,7 +900,7 @@ Value createmultisig(CWallet* pWallet, const Array& params, bool fHelp)
         string msg = "createmultisig <nrequired> <'[\"key\",\"key\"]'>\n"
             "Creates a multi-signature address and returns a json object\n"
             "with keys:\n"
-            "address : hobonickels address\n"
+            "address : swisscoin address\n"
             "redeemScript : hex-encoded redemption script";
         throw runtime_error(msg);
     }
@@ -1544,7 +1544,7 @@ Value walletpassphrase(CWallet* pWallet, const Array& params, bool fHelp)
     else
         pWallet->fWalletUnlockMintOnly = false;
 
-    //HBN: Zero unlock time means forever, well 68 years, forever for crypto.
+    //SWC: Zero unlock time means forever, well 68 years, forever for crypto.
     int64 nUnlockTime;
 
     if (params[1].get_int64() == 0 )
@@ -1645,7 +1645,7 @@ Value encryptwallet(CWallet* pWallet, const Array& params, bool fHelp)
     // slack space in .dat files; that is bad if the old data is
     // unencrypted private keys. So:
     StartShutdown();
-    return "wallet encrypted; HoboNickels server stopping, restart to run with encrypted wallet.  The keypool has been flushed, you need to make a new backup.";
+    return "wallet encrypted; SwissCoin server stopping, restart to run with encrypted wallet.  The keypool has been flushed, you need to make a new backup.";
 }
 
 class DescribeAddressVisitor : public boost::static_visitor<Object>
@@ -1692,8 +1692,8 @@ Value validateaddress(CWallet* pWallet, const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "validateaddress <HoboNickelsaddress>\n"
-            "Return information about <HoboNickelsaddress>.");
+            "validateaddress <SwissCoinaddress>\n"
+            "Return information about <SwissCoinaddress>.");
 
     CBitcoinAddress address(params[0].get_str());
     bool isValid = address.IsValid();
@@ -1721,8 +1721,8 @@ Value validatepubkey(CWallet* pWallet, const Array& params, bool fHelp)
 {
     if (fHelp || !params.size() || params.size() > 2)
         throw runtime_error(
-            "validatepubkey <HoboNickelspubkey>\n"
-            "Return information about <HoboNickelspubkey>.");
+            "validatepubkey <SwissCoinpubkey>\n"
+            "Return information about <SwissCoinpubkey>.");
 
     std::vector<unsigned char> vchPubKey = ParseHex(params[0].get_str());
     CPubKey pubKey(vchPubKey);
@@ -1847,7 +1847,7 @@ Value repairwallet(CWallet* pWallet, const Array& params, bool fHelp)
     return result;
 }
 
-// HoboNickels: resend unconfirmed wallet transactions
+// SwissCoin: resend unconfirmed wallet transactions
 Value resendtx(CWallet* pWallet, const Array& params, bool fHelp)
 {
     if (fHelp || params.size() > 1)

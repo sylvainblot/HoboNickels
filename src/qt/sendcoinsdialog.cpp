@@ -34,7 +34,7 @@ SendCoinsDialog::SendCoinsDialog(QWidget *parent) :
 
 #if QT_VERSION >= 0x040700
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
-    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a HoboNickels address (e.g. EwwSdMhjJzK7HBUp6EfsbMeAtmhKqnf1ru)"));
+    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a SwissCoin address (e.g. EwwSdMhjJzK7HBUp6EfsbMeAtmhKqnf1ru)"));
 #endif
 
     addEntry();
@@ -464,7 +464,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString & text)
         else if (!CBitcoinAddress(text.toStdString()).IsValid())
         {
             ui->labelCoinControlChangeLabel->setStyleSheet("QLabel{color:red;}");
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid HoboNickels address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid SwissCoin address"));
         }
         else
         {

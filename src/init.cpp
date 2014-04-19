@@ -90,7 +90,7 @@ void Shutdown(void* parg)
         TimerThread::StopTimer(); // for walletpassphrase unlock
         NewThread(ExitTimeout, NULL);
         Sleep(50);
-        printf("HoboNickels exited\n\n");
+        printf("SwissCoin exited\n\n");
         fExit = true;
 #ifndef QT_GUI
         // ensure non-UI client gets exited here, but let Bitcoin-Qt reach 'return 0;' in bitcoin.cpp
@@ -145,12 +145,12 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to bitcoind / RPC client
-            std::string strUsage = _("HoboNickels version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("SwissCoin version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  HoboNickelsd [options]                     " + "\n" +
-                  "  HoboNickelsd [options] <command> [params]  " + _("Send command to -server or HoboNickelsd") + "\n" +
-                  "  HoboNickelsd [options] help                " + _("List commands") + "\n" +
-                  "  HoboNickelsd [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  SwissCoind [options]                     " + "\n" +
+                  "  SwissCoind [options] <command> [params]  " + _("Send command to -server or SwissCoind") + "\n" +
+                  "  SwissCoind [options] help                " + _("List commands") + "\n" +
+                  "  SwissCoind [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage();
 
@@ -160,7 +160,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "HoboNickels:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "SwissCoin:"))
                 fCommandLine = true;
 
         if (fCommandLine)
@@ -200,13 +200,13 @@ int main(int argc, char* argv[])
 
 bool static InitError(const std::string &str)
 {
-    uiInterface.ThreadSafeMessageBox(str, _("HoboNickels"), CClientUIInterface::MSG_ERROR);
+    uiInterface.ThreadSafeMessageBox(str, _("SwissCoin"), CClientUIInterface::MSG_ERROR);
     return false;
 }
 
 bool static InitWarning(const std::string &str)
 {
-    uiInterface.ThreadSafeMessageBox(str, _("HoboNickels"), CClientUIInterface::MSG_WARNING);
+    uiInterface.ThreadSafeMessageBox(str, _("SwissCoin"), CClientUIInterface::MSG_WARNING);
     return true;
 }
 
@@ -228,8 +228,8 @@ std::string HelpMessage()
 {
     string strUsage = _("Options:") + "\n" +
         "  -?                     " + _("This help message") + "\n" +
-        "  -conf=<file>           " + _("Specify configuration file (default: HoboNickels.conf)") + "\n" +
-        "  -pid=<file>            " + _("Specify pid file (default: HoboNickelsd.pid)") + "\n" +
+        "  -conf=<file>           " + _("Specify configuration file (default: SwissCoin.conf)") + "\n" +
+        "  -pid=<file>            " + _("Specify pid file (default: SwissCoind.pid)") + "\n" +
         "  -gen                   " + _("Generate coins") + "\n" +
         "  -gen=0                 " + _("Don't generate coins") + "\n" +
         "  -datadir=<dir>         " + _("Specify data directory") + "\n" +
@@ -563,7 +563,7 @@ bool AppInit2()
     if (file) fclose(file);
     static boost::interprocess::file_lock lock(pathLockFile.string().c_str());
     if (!lock.try_lock())
-        return InitError(strprintf(_("Cannot obtain a lock on data directory %s.  HoboNickels is probably already running."), strDataDir.c_str()));
+        return InitError(strprintf(_("Cannot obtain a lock on data directory %s.  SwissCoin is probably already running."), strDataDir.c_str()));
 
 #if !defined(WIN32) && !defined(QT_GUI)
     if (fDaemon)
@@ -590,7 +590,7 @@ bool AppInit2()
     if (GetBoolArg("-shrinkdebugfile", !fDebug))
         ShrinkDebugFile();
     printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    printf("HoboNickels version %s (%s)\n", FormatFullVersion().c_str(), CLIENT_DATE.c_str());
+    printf("SwissCoin version %s (%s)\n", FormatFullVersion().c_str(), CLIENT_DATE.c_str());
     printf("Using OpenSSL version %s\n", SSLeay_version(SSLEAY_VERSION));
     if (!fLogTimestamps)
         printf("Startup time: %s\n", DateTimeStrFormat("%x %H:%M:%S", GetTime()).c_str());
@@ -599,7 +599,7 @@ bool AppInit2()
     std::ostringstream strErrors;
 
     if (fDaemon)
-        fprintf(stdout, "HoboNickels server starting\n");
+        fprintf(stdout, "SwissCoin server starting\n");
 
     int64 nStart;
 
@@ -631,7 +631,7 @@ bool AppInit2()
                                      " Original wallet.dat saved as wallet.{timestamp}.bak in %s; if"
                                      " your balance or transactions are incorrect you should"
                                      " restore from a backup."), strDataDir.c_str());
-            uiInterface.ThreadSafeMessageBox(msg, _("HoboNickels"), CClientUIInterface::MSG_WARNING);
+            uiInterface.ThreadSafeMessageBox(msg, _("SwissCoin"), CClientUIInterface::MSG_WARNING);
         }
         if (r == CDBEnv::RECOVER_FAIL)
             return InitError(_("wallet.dat corrupt, salvage failed"));

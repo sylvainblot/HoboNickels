@@ -372,7 +372,7 @@ void CWallet::WalletUpdateSpent(const CTransaction &tx, bool fBlock)
                     printf("WalletUpdateSpent: bad wtx %s\n", wtx.GetHash().ToString().c_str());
                 else if (!wtx.IsSpent(txin.prevout.n) && IsMine(wtx.vout[txin.prevout.n]))
                 {
-                    printf("WalletUpdateSpent found spent coin %shbn %s\n", FormatMoney(wtx.GetCredit()).c_str(), wtx.GetHash().ToString().c_str());
+                    printf("WalletUpdateSpent found spent coin %sswc %s\n", FormatMoney(wtx.GetCredit()).c_str(), wtx.GetHash().ToString().c_str());
                     wtx.MarkSpent(txin.prevout.n);
                     wtx.WriteToDisk();
                     NotifyTransactionChanged(this, txin.prevout.hash, CT_UPDATED);
@@ -2408,7 +2408,7 @@ void CWallet::FixSpentCoins(int& nMismatchFound, int64& nBalanceInQuestion, int&
         {
             if (IsMine(pcoin->vout[n]) && pcoin->IsSpent(n) && (txindex.vSpent.size() <= n || txindex.vSpent[n].IsNull()))
             {
-                printf("FixSpentCoins found lost coin %shbn %s[%d], %s\n",
+                printf("FixSpentCoins found lost coin %sswc %s[%d], %s\n",
                     FormatMoney(pcoin->vout[n].nValue).c_str(), hash.ToString().c_str(), n, fCheckOnly? "repair not attempted" : "repairing");
                 nMismatchFound++;
                 nBalanceInQuestion += pcoin->vout[n].nValue;
@@ -2420,7 +2420,7 @@ void CWallet::FixSpentCoins(int& nMismatchFound, int64& nBalanceInQuestion, int&
             }
             else if (IsMine(pcoin->vout[n]) && !pcoin->IsSpent(n) && (txindex.vSpent.size() > n && !txindex.vSpent[n].IsNull()))
             {
-                printf("FixSpentCoins found spent coin %shbn %s[%d], %s\n",
+                printf("FixSpentCoins found spent coin %sswc %s[%d], %s\n",
                     FormatMoney(pcoin->vout[n].nValue).c_str(), hash.ToString().c_str(), n, fCheckOnly? "repair not attempted" : "repairing");
                 nMismatchFound++;
                 nBalanceInQuestion += pcoin->vout[n].nValue;
@@ -2736,11 +2736,11 @@ bool CWalletManager::LoadWallet(const string& strName, ostringstream& strErrors,
             InitWarning(msg);
         }
         else if (nLoadWalletRet == DB_TOO_NEW)
-            strErrors << _("Error loading ") << strFile << _(": Wallet requires newer version of HoboNickels") << "\n";
+            strErrors << _("Error loading ") << strFile << _(": Wallet requires newer version of SwissCoin") << "\n";
         else if (nLoadWalletRet == DB_NEED_REWRITE)
         {
             LEAVE_CRITICAL_SECTION(cs_WalletManager);
-            strErrors << _("Wallet needed to be rewritten: restart HoboNickels to complete") << "\n";
+            strErrors << _("Wallet needed to be rewritten: restart SwissCoin to complete") << "\n";
             printf("%s", strErrors.str().c_str());
             return InitError(strErrors.str());
         }
@@ -2874,11 +2874,11 @@ bool CWalletManager::LoadWalletFromFile(const string& strFile, string& strName, 
             InitWarning(msg);
         }
         else if (nLoadWalletRet == DB_TOO_NEW)
-            strErrors << _("Error loading ") << strFile << _(": Wallet requires newer version of HoboNickels") << "\n";
+            strErrors << _("Error loading ") << strFile << _(": Wallet requires newer version of SwissCoin") << "\n";
         else if (nLoadWalletRet == DB_NEED_REWRITE)
         {
             LEAVE_CRITICAL_SECTION(cs_WalletManager);
-            strErrors << _("Wallet needed to be rewritten: restart HoboNickels to complete") << "\n";
+            strErrors << _("Wallet needed to be rewritten: restart SwissCoin to complete") << "\n";
             printf("%s", strErrors.str().c_str());
             return InitError(strErrors.str());
         }

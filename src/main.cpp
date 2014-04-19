@@ -69,7 +69,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "HoboNickels Signed Message:\n";
+const string strMessageMagic = "SwissCoin Signed Message:\n";
 
 double dHashesPerSec;
 int64 nHPSTimerStart;
@@ -1038,7 +1038,7 @@ int64 GetProofOfStakeReward(int64 nCoinAge, unsigned int nBits, unsigned int nTi
         bnTargetLimit.SetCompact(bnTargetLimit.GetCompact());
 
 
-        // HoboNickels: reward for coin-year is cut in half every 64x multiply of PoS difficulty
+        // SwissCoin: reward for coin-year is cut in half every 64x multiply of PoS difficulty
         // A reasonably continuous curve is used to avoid shock to market
         // (bnRewardCoinYearLimit / nRewardCoinYear) ** 4 == bnProofOfStakeLimit / bnTarget
         //
@@ -1622,8 +1622,8 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
     // Now that the whole chain is irreversibly beyond that time it is applied to all blocks except the
     // two in the chain that violate it. This prevents exploiting the issue against nodes in their
     // initial block download.
-    bool fEnforceBIP30 = true; // Always active in HoboNickels
-    bool fStrictPayToScriptHash = true; // Always active in HoboNickels
+    bool fEnforceBIP30 = true; // Always active in SwissCoin
+    bool fStrictPayToScriptHash = true; // Always active in SwissCoin
 
     //// issue here: it doesn't know the version
     unsigned int nTxPos;
@@ -2498,7 +2498,7 @@ bool CBlock::SignPoSBlock(CWallet& wallet)
     return false;
 }
 
-// hbn: sign block for PoW
+// swc: sign block for PoW
 bool CBlock::SignBlock(const CKeyStore& keystore)
 {
     vector<valtype> vSolutions;
@@ -2599,7 +2599,7 @@ bool CheckDiskSpace(uint64 nAdditionalBytes)
         string strMessage = _("Warning: Disk space is low!");
         strMiscWarning = strMessage;
         printf("*** %s\n", strMessage.c_str());
-        uiInterface.ThreadSafeMessageBox(strMessage, "HoboNickels", CClientUIInterface::MSG_WARNING);
+        uiInterface.ThreadSafeMessageBox(strMessage, "SwissCoin", CClientUIInterface::MSG_WARNING);
         StartShutdown();
         return false;
     }
@@ -2689,7 +2689,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
         // Genesis block
 
-        const char* pszTimestamp = !fTestNet ? "HoboNickels are Go!" : "Tranz Testnet";
+        const char* pszTimestamp = !fTestNet ? "SwissCoin are Go!" : "Tranz Testnet";
 
         CTransaction txNew;
         txNew.nTime = nChainStartTime;

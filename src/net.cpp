@@ -1070,7 +1070,7 @@ void ThreadMapPort2(void* parg)
             }
         }
 
-        string strDesc = "HoboNickels " + FormatFullVersion();
+        string strDesc = "SwissCoin " + FormatFullVersion();
 #ifndef UPNPDISCOVER_SUCCESS
         /* miniupnpc 1.5 */
         r = UPNP_AddPortMapping(urls.controlURL, data.first.servicetype,
@@ -1153,10 +1153,10 @@ void MapPort()
 // The second name should resolve to a list of seed addresses.
 static const char *strDNSSeed[][2] = {
     {"scryptseed", "seed.scrypt.io"},
-    {"hoboseed", "seed.hobonickels.info"},
-    {"hoboseed2", "seed2.hobonickels.info"},
-    {"hoboseed3", "seed3.hobonickels.info"},
-    {"hoboseed4", "seed4.hobonickels.info"},
+    {"hoboseed", "seed.swisscoin.info"},
+    {"hoboseed2", "seed2.swisscoin.info"},
+    {"hoboseed3", "seed3.swisscoin.info"},
+    {"hoboseed4", "seed4.swisscoin.info"},
 
 
 };
@@ -1759,7 +1759,7 @@ bool BindListenPort(const CService &addrBind, string& strError)
     {
         int nErr = WSAGetLastError();
         if (nErr == WSAEADDRINUSE)
-            strError = strprintf(_("Unable to bind to %s on this computer. HoboNickels is probably already running."), addrBind.ToString().c_str());
+            strError = strprintf(_("Unable to bind to %s on this computer. SwissCoin is probably already running."), addrBind.ToString().c_str());
         else
             strError = strprintf(_("Unable to bind to %s on this computer (bind returned error %d, %s)"), addrBind.ToString().c_str(), nErr, strerror(nErr));
         printf("%s\n", strError.c_str());

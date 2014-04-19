@@ -1,4 +1,4 @@
-// Copyright (c) 2013 HoboNickels Developers
+// Copyright (c) 2013 SwissCoin Developers
 
 #include <string.h>
 #include "pbkdf2.h"

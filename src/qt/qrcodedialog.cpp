@@ -85,7 +85,7 @@ void QRCodeDialog::genCode()
 
 QString QRCodeDialog::getURI()
 {
-    QString ret = QString("hobonickels:%1").arg(address);
+    QString ret = QString("swisscoin:%1").arg(address);
     int paramCount = 0;
 
     ui->outUri->clear();
@@ -94,7 +94,7 @@ QString QRCodeDialog::getURI()
     {
         if (ui->lnReqAmount->validate())
         {
-            // even if we allow a non HBN unit input in lnReqAmount, we generate the URI with HBN as unit (as defined in BIP21)
+            // even if we allow a non SWC unit input in lnReqAmount, we generate the URI with SWC as unit (as defined in BIP21)
             ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::BTC, ui->lnReqAmount->value()));
             paramCount++;
         }

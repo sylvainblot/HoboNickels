@@ -6,18 +6,18 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About HoboNickels</source>
-        <translation>О HoboNickels</translation>
+        <source>About SwissCoin</source>
+        <translation>О SwissCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;HoboNickels&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;HoboNickels&lt;/b&gt; версия</translation>
+        <source>&lt;b&gt;SwissCoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;SwissCoin&lt;/b&gt; версия</translation>
     </message>
     <message>
         <location line="+41"/>
-        <source>Copyright © 2009-2012 The HoboNickels developers</source>
-        <translation>Все права защищены © 2009-2012 Разработчики HoboNickels</translation>
+        <source>Copyright © 2009-2012 The SwissCoin developers</source>
+        <translation>Все права защищены © 2009-2012 Разработчики SwissCoin</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -64,7 +64,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your HoboNickels addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your SwissCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Это Ваши адреса для получения платежей. Вы можете дать разные адреса отправителям, чтобы отслеживать, кто именно вам платит.</translation>
     </message>
     <message>
@@ -79,8 +79,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a HoboNickels address</source>
-        <translation>Подписать сообщение, чтобы доказать владение адресом HoboNickels</translation>
+        <source>Sign a message to prove you own a SwissCoin address</source>
+        <translation>Подписать сообщение, чтобы доказать владение адресом SwissCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -94,8 +94,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified HoboNickels address</source>
-        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом HoboNickels</translation>
+        <source>Verify a message to ensure it was signed with a specified SwissCoin address</source>
+        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом SwissCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -252,7 +252,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>HoboNickels will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <source>SwissCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>Сейчас программа закроется для завершения процесса шифрования. Помните, что шифрование вашего бумажника не может полностью защитить ваши монеты от кражи с помощью инфицирования вашего компьютера вредоносным ПО.</translation>
     </message>
     <message>
@@ -366,8 +366,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about HoboNickels</source>
-        <translation>Показать информацию о HoboNickels&apos;е</translation>
+        <source>Show information about SwissCoin</source>
+        <translation>Показать информацию о SwissCoin&apos;е</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -420,13 +420,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-58"/>
-        <source>Send coins to a HoboNickels address</source>
-        <translation>Отправить монеты на указанный адрес HoboNickels</translation>
+        <source>Send coins to a SwissCoin address</source>
+        <translation>Отправить монеты на указанный адрес SwissCoin</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for HoboNickels</source>
-        <translation>Изменить параметры конфигурации HoboNickels</translation>
+        <source>Modify configuration options for SwissCoin</source>
+        <translation>Изменить параметры конфигурации SwissCoin</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -465,8 +465,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-186"/>
-        <source>HoboNickels</source>
-        <translation>HoboNickels</translation>
+        <source>SwissCoin</source>
+        <translation>SwissCoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -475,8 +475,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+168"/>
-        <source>&amp;About HoboNickels</source>
-        <translation>&amp;О HoboNickels</translation>
+        <source>&amp;About SwissCoin</source>
+        <translation>&amp;О SwissCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -517,12 +517,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>HoboNickels client</source>
-        <translation>HoboNickels клиент</translation>
+        <source>SwissCoin client</source>
+        <translation>SwissCoin клиент</translation>
     </message>
     <message numerus="yes">
         <location line="+69"/>
-        <source>%n active connection(s) to HoboNickels network</source>
+        <source>%n active connection(s) to SwissCoin network</source>
         <translation>
             <numerusform>%n активное соединение с сетью</numerusform>
             <numerusform>%n активных соединений с сетью</numerusform>
@@ -627,8 +627,8 @@ Address: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid HoboNickels address or malformed URI parameters.</source>
-        <translation>Не удалось обработать URI! Это может быть связано с неверным адресом HoboNickels или неправильными параметрами URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid SwissCoin address or malformed URI parameters.</source>
+        <translation>Не удалось обработать URI! Это может быть связано с неверным адресом SwissCoin или неправильными параметрами URI.</translation>
     </message>
     <message>
         <location line="+16"/>
@@ -662,8 +662,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. HoboNickels can no longer continue safely and will quit.</source>
-        <translation>Произошла неисправимая ошибка. HoboNickels не может безопасно продолжать работу и будет закрыт.</translation>
+        <source>A fatal error occurred. SwissCoin can no longer continue safely and will quit.</source>
+        <translation>Произошла неисправимая ошибка. SwissCoin не может безопасно продолжать работу и будет закрыт.</translation>
     </message>
 </context>
 <context>
@@ -904,7 +904,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <location line="+80"/>
         <location line="+86"/>
         <location line="+38"/>
-        <source>0.00 HBN</source>
+        <source>0.00 SWC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -997,8 +997,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+5"/>
-        <source>The entered address &quot;%1&quot; is not a valid HoboNickels address.</source>
-        <translation>Введённый адрес &quot;%1&quot; не является правильным HoboNickels-адресом.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid SwissCoin address.</source>
+        <translation>Введённый адрес &quot;%1&quot; не является правильным SwissCoin-адресом.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -1016,8 +1016,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>HoboNickels-Qt</source>
-        <translation>HoboNickels-Qt</translation>
+        <source>SwissCoin-Qt</source>
+        <translation>SwissCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1079,13 +1079,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start HoboNickels after logging in to the system.</source>
-        <translation>Автоматически запускать HoboNickels после входа в систему</translation>
+        <source>Automatically start SwissCoin after logging in to the system.</source>
+        <translation>Автоматически запускать SwissCoin после входа в систему</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start HoboNickels on system login</source>
-        <translation>&amp;Запускать HoboNickels при входе в систему</translation>
+        <source>&amp;Start SwissCoin on system login</source>
+        <translation>&amp;Запускать SwissCoin при входе в систему</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1104,8 +1104,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the HoboNickels client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть порт для HoboNickels-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
+        <source>Automatically open the SwissCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть порт для SwissCoin-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1114,8 +1114,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the HoboNickels network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Подключаться к сети HoboNickels через прокси SOCKS (например, при подключении через Tor).</translation>
+        <source>Connect to the SwissCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Подключаться к сети SwissCoin через прокси SOCKS (например, при подключении через Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1189,8 +1189,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting HoboNickels.</source>
-        <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска HoboNickels.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting SwissCoin.</source>
+        <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска SwissCoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1204,8 +1204,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show HoboNickels addresses in the transaction list or not.</source>
-        <translation>Показывать ли адреса HoboNickels в списке транзакций.</translation>
+        <source>Whether to show SwissCoin addresses in the transaction list or not.</source>
+        <translation>Показывать ли адреса SwissCoin в списке транзакций.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1251,8 +1251,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting HoboNickels.</source>
-        <translation>Эта настройка вступит в силу после перезапуска HoboNickels</translation>
+        <source>This setting will take effect after restarting SwissCoin.</source>
+        <translation>Эта настройка вступит в силу после перезапуска SwissCoin</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1270,8 +1270,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+33"/>
         <location line="+212"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HoboNickels network after a connection is established, but this process has not completed yet.</source>
-        <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью HoboNickels после подключения, но этот процесс пока не завершён.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the SwissCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью SwissCoin после подключения, но этот процесс пока не завершён.</translation>
     </message>
     <message>
         <location line="-170"/>
@@ -1486,8 +1486,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the HoboNickels-Qt help message to get a list with possible HoboNickels command-line options.</source>
-        <translation>Показать помощь по HoboNickels-Qt, чтобы получить список доступных параметров командной строки.</translation>
+        <source>Show the SwissCoin-Qt help message to get a list with possible SwissCoin command-line options.</source>
+        <translation>Показать помощь по SwissCoin-Qt, чтобы получить список доступных параметров командной строки.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1506,13 +1506,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>HoboNickels - Debug window</source>
-        <translation>HoboNickels - Окно отладки</translation>
+        <source>SwissCoin - Debug window</source>
+        <translation>SwissCoin - Окно отладки</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>HoboNickels Core</source>
-        <translation>Ядро HoboNickels</translation>
+        <source>SwissCoin Core</source>
+        <translation>Ядро SwissCoin</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1521,8 +1521,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the HoboNickels debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть отладочный лог-файл HoboNickels из текущего каталога данных. Это может занять несколько секунд для больших лог-файлов.</translation>
+        <source>Open the SwissCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть отладочный лог-файл SwissCoin из текущего каталога данных. Это может занять несколько секунд для больших лог-файлов.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1531,8 +1531,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the HoboNickels RPC console.</source>
-        <translation>Добро пожаловать в RPC-консоль HoboNickels.</translation>
+        <source>Welcome to the SwissCoin RPC console.</source>
+        <translation>Добро пожаловать в RPC-консоль SwissCoin.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1660,8 +1660,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a HoboNickels address (e.g. EwwSdMhjJzK7HBUp6EfsbMeAtmhKqnf1ru)</source>
-        <translation>Введите HoboNickels-адрес (например EwwSdMhjJzK7HBUp6EfsbMeAtmhKqnf1ru)</translation>
+        <source>Enter a SwissCoin address (e.g. EwwSdMhjJzK7HBUp6EfsbMeAtmhKqnf1ru)</source>
+        <translation>Введите SwissCoin-адрес (например EwwSdMhjJzK7HBUp6EfsbMeAtmhKqnf1ru)</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="+129"/>
@@ -1864,8 +1864,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a HoboNickels address (e.g. EwwSdMhjJzK7HBUp6EfsbMeAtmhKqnf1ru)</source>
-        <translation>Введите HoboNickels-адрес (например EwwSdMhjJzK7HBUp6EfsbMeAtmhKqnf1ru)</translation>
+        <source>Enter a SwissCoin address (e.g. EwwSdMhjJzK7HBUp6EfsbMeAtmhKqnf1ru)</source>
+        <translation>Введите SwissCoin-адрес (например EwwSdMhjJzK7HBUp6EfsbMeAtmhKqnf1ru)</translation>
     </message>
 </context>
 <context>
@@ -1925,8 +1925,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this HoboNickels address</source>
-        <translation>Подписать сообщение, чтобы доказать владение адресом HoboNickels</translation>
+        <source>Sign the message to prove you own this SwissCoin address</source>
+        <translation>Подписать сообщение, чтобы доказать владение адресом SwissCoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -1957,8 +1957,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified HoboNickels address</source>
-        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом HoboNickels</translation>
+        <source>Verify the message to ensure it was signed with the specified SwissCoin address</source>
+        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом SwissCoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -1968,8 +1968,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a HoboNickels address (e.g. EwwSdMhjJzK7HBUp6EfsbMeAtmhKqnf1ru)</source>
-        <translation>Введите адрес HoboNickels (напр. EwwSdMhjJzK7HBUp6EfsbMeAtmhKqnf1ru)</translation>
+        <source>Enter a SwissCoin address (e.g. EwwSdMhjJzK7HBUp6EfsbMeAtmhKqnf1ru)</source>
+        <translation>Введите адрес SwissCoin (напр. EwwSdMhjJzK7HBUp6EfsbMeAtmhKqnf1ru)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1978,8 +1978,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter HoboNickels signature</source>
-        <translation>Введите подпись HoboNickels</translation>
+        <source>Enter SwissCoin signature</source>
+        <translation>Введите подпись SwissCoin</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2559,7 +2559,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+124"/>
-        <source>HoboNickels version</source>
+        <source>SwissCoin version</source>
         <translation>Версия</translation>
     </message>
     <message>
@@ -2589,13 +2589,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+23"/>
-        <source>Specify configuration file (default: HoboNickels.conf)</source>
-        <translation>Указать конфигурационный файл (по умолчанию: HoboNickels.conf)</translation>
+        <source>Specify configuration file (default: SwissCoin.conf)</source>
+        <translation>Указать конфигурационный файл (по умолчанию: SwissCoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: HoboNickelsd.pid)</source>
-        <translation>Указать pid-файл (по умолчанию: HoboNickels.pid)</translation>
+        <source>Specify pid file (default: SwissCoind.pid)</source>
+        <translation>Указать pid-файл (по умолчанию: SwissCoin.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
@@ -2757,8 +2757,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong HoboNickels will not work properly.</source>
-        <translation>Внимание: убедитесь, что дата и время на Вашем компьютере выставлены верно. Если Ваши часы идут неправильно, HoboNickels будет работать некорректно.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong SwissCoin will not work properly.</source>
+        <translation>Внимание: убедитесь, что дата и время на Вашем компьютере выставлены верно. Если Ваши часы идут неправильно, SwissCoin будет работать некорректно.</translation>
     </message>
     <message>
         <location line="+22"/>
@@ -2859,7 +2859,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or HoboNickelsd</source>
+        <source>Send command to -server or SwissCoind</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3023,13 +3023,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-129"/>
-        <source>Cannot obtain a lock on data directory %s.  HoboNickels is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s.  SwissCoin is probably already running.</source>
         <translation>Невозможно установить блокировку на рабочую директорию %s.  Возможно, бумажник уже запущен.</translation>
     </message>
     <message>
         <location line="+99"/>
-        <source>HoboNickels</source>
-        <translation>HoboNickels</translation>
+        <source>SwissCoin</source>
+        <translation>SwissCoin</translation>
     </message>
     <message>
         <location line="+33"/>
@@ -3063,13 +3063,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of HoboNickels</source>
-        <translation>Ошибка загрузки wallet.dat: бумажник требует более новую версию HoboNickels</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of SwissCoin</source>
+        <translation>Ошибка загрузки wallet.dat: бумажник требует более новую версию SwissCoin</translation>
     </message>
     <message>
         <location line="+76"/>
-        <source>Wallet needed to be rewritten: restart HoboNickels to complete</source>
-        <translation>Необходимо перезаписать бумажник, перезапустите HoboNickels для завершения операции.</translation>
+        <source>Wallet needed to be rewritten: restart SwissCoin to complete</source>
+        <translation>Необходимо перезаписать бумажник, перезапустите SwissCoin для завершения операции.</translation>
     </message>
     <message>
         <location line="-78"/>
@@ -3138,8 +3138,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-22"/>
-        <source>Unable to bind to %s on this computer. HoboNickels is probably already running.</source>
-        <translation>Невозможно привязаться к %s на этом компьютере.  Возможно, HoboNickels уже работает.</translation>
+        <source>Unable to bind to %s on this computer. SwissCoin is probably already running.</source>
+        <translation>Невозможно привязаться к %s на этом компьютере.  Возможно, SwissCoin уже работает.</translation>
     </message>
     <message>
         <location line="+49"/>

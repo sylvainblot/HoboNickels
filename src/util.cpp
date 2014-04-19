@@ -1068,7 +1068,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "HoboNickels";
+    const char* pszModule = "SwissCoin";
 #endif
     if (pex)
         return strprintf(
@@ -1117,13 +1117,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\HoboNickels
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\HoboNickels
-    // Mac: ~/Library/Application Support/HoboNickels
-    // Unix: ~/.HoboNickels
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\SwissCoin
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\SwissCoin
+    // Mac: ~/Library/Application Support/SwissCoin
+    // Unix: ~/.SwissCoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "HoboNickels";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "SwissCoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -1135,10 +1135,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "HoboNickels";
+    return pathRet / "SwissCoin";
 #else
     // Unix
-    return pathRet / ".HoboNickels";
+    return pathRet / ".SwissCoin";
 #endif
 #endif
 }
@@ -1180,7 +1180,7 @@ const boost::filesystem::path &GetDataDir(bool fNetSpecific)
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "HoboNickels.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "SwissCoin.conf"));
     if (!pathConfigFile.is_complete()) pathConfigFile = GetDataDir(false) / pathConfigFile;
     return pathConfigFile;
 }
@@ -1190,14 +1190,14 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good())
-        return; // No HoboNickels.conf file is OK
+        return; // No SwissCoin.conf file is OK
 
     set<string> setOptions;
     setOptions.insert("*");
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it)
     {
-        // Don't overwrite existing settings so command line settings override HoboNickels.conf
+        // Don't overwrite existing settings so command line settings override SwissCoin.conf
         string strKey = string("-") + it->string_key;
         if (mapSettingsRet.count(strKey) == 0)
         {
@@ -1211,7 +1211,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "HoboNickelsd.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "SwissCoind.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }
@@ -1365,10 +1365,10 @@ void AddTimeData(const CNetAddr& ip, int64 nTime)
                 if (!fMatch)
                 {
                     fDone = true;
-                    string strMessage = _("Warning: Please check that your computer's date and time are correct! If your clock is wrong HoboNickels will not work properly.");
+                    string strMessage = _("Warning: Please check that your computer's date and time are correct! If your clock is wrong SwissCoin will not work properly.");
                     strMiscWarning = strMessage;
                     printf("*** %s\n", strMessage.c_str());
-                    uiInterface.ThreadSafeMessageBox(strMessage+" ", string("HoboNickels"), CClientUIInterface::MSG_WARNING);
+                    uiInterface.ThreadSafeMessageBox(strMessage+" ", string("SwissCoin"), CClientUIInterface::MSG_WARNING);
                 }
             }
         }

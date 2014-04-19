@@ -6,18 +6,18 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About HoboNickels</source>
-        <translation>O HoboNickels</translation>
+        <source>About SwissCoin</source>
+        <translation>O SwissCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;HoboNickels&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;HoboNickels&lt;/b&gt; version</translation>
+        <source>&lt;b&gt;SwissCoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;SwissCoin&lt;/b&gt; version</translation>
     </message>
     <message>
         <location line="+41"/>
-        <source>Copyright © 2009-2012 The HoboNickels developers</source>
-        <translation>Copyright © 2009-2012 The HoboNickels twórcy</translation>
+        <source>Copyright © 2009-2012 The SwissCoin developers</source>
+        <translation>Copyright © 2009-2012 The SwissCoin twórcy</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -64,8 +64,8 @@ Ten produkt zawiera oprogramowanie opracowane przez OpenSSL Project do użytku w
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your HoboNickels addresses for receiving payments. You may want to give a different one to each</source>
-        <translation>To twoje adresy HoboNickels do odbierania płatności. Możesz chcieć dać inny dla każdego wysyłającego, aby śledzić kto płaci.</translation>
+        <source>These are your SwissCoin addresses for receiving payments. You may want to give a different one to each</source>
+        <translation>To twoje adresy SwissCoin do odbierania płatności. Możesz chcieć dać inny dla każdego wysyłającego, aby śledzić kto płaci.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -79,8 +79,8 @@ Ten produkt zawiera oprogramowanie opracowane przez OpenSSL Project do użytku w
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a HoboNickels address</source>
-        <translation>Sign a message to prove you own a HoboNickels address</translation>
+        <source>Sign a message to prove you own a SwissCoin address</source>
+        <translation>Sign a message to prove you own a SwissCoin address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -94,8 +94,8 @@ Ten produkt zawiera oprogramowanie opracowane przez OpenSSL Project do użytku w
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified HoboNickels address</source>
-        <translation>Zweryfikuj wiadomość by mieć pewność, że została podpisana z wybranym adresem HoboNickels.</translation>
+        <source>Verify a message to ensure it was signed with a specified SwissCoin address</source>
+        <translation>Zweryfikuj wiadomość by mieć pewność, że została podpisana z wybranym adresem SwissCoin.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -252,8 +252,8 @@ Ten produkt zawiera oprogramowanie opracowane przez OpenSSL Project do użytku w
     </message>
     <message>
         <location line="-56"/>
-        <source>HoboNickels will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>HoboNickels zostanie zamknięty by dokończyć proces szyfrowania. Pamiętaj, że szyfrowanie nie może w pełni zabezpieczyć twoich monet od bycia ukradzionymi przez wirusy infekujące twój komputer.</translation>
+        <source>SwissCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>SwissCoin zostanie zamknięty by dokończyć proces szyfrowania. Pamiętaj, że szyfrowanie nie może w pełni zabezpieczyć twoich monet od bycia ukradzionymi przez wirusy infekujące twój komputer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -366,8 +366,8 @@ Ten produkt zawiera oprogramowanie opracowane przez OpenSSL Project do użytku w
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about HoboNickels</source>
-        <translation>Pokaż informację o HoboNickels</translation>
+        <source>Show information about SwissCoin</source>
+        <translation>Pokaż informację o SwissCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -419,13 +419,13 @@ Ten produkt zawiera oprogramowanie opracowane przez OpenSSL Project do użytku w
     </message>
     <message>
         <location line="-58"/>
-        <source>Send coins to a HoboNickels address</source>
-        <translation>Wyślij monety do adresu HoboNickels</translation>
+        <source>Send coins to a SwissCoin address</source>
+        <translation>Wyślij monety do adresu SwissCoin</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for HoboNickels</source>
-        <translation>Zmodyfikuj ustawienia dla HoboNickels</translation>
+        <source>Modify configuration options for SwissCoin</source>
+        <translation>Zmodyfikuj ustawienia dla SwissCoin</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -464,8 +464,8 @@ Ten produkt zawiera oprogramowanie opracowane przez OpenSSL Project do użytku w
     </message>
     <message>
         <location line="-186"/>
-        <source>HoboNickels</source>
-        <translation>HoboNickels</translation>
+        <source>SwissCoin</source>
+        <translation>SwissCoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -474,8 +474,8 @@ Ten produkt zawiera oprogramowanie opracowane przez OpenSSL Project do użytku w
     </message>
     <message>
         <location line="+168"/>
-        <source>&amp;About HoboNickels</source>
-        <translation>&amp;O HoboNickels</translation>
+        <source>&amp;About SwissCoin</source>
+        <translation>&amp;O SwissCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -516,15 +516,15 @@ Ten produkt zawiera oprogramowanie opracowane przez OpenSSL Project do użytku w
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>HoboNickels client</source>
-        <translation>HoboNickels program</translation>
+        <source>SwissCoin client</source>
+        <translation>SwissCoin program</translation>
     </message>
     <message numerus="yes">
         <location line="+69"/>
-        <source>%n active connection(s) to HoboNickels network</source>
+        <source>%n active connection(s) to SwissCoin network</source>
         <translation>
-            <numerusform>%n aktywne połączenie do sieci HoboNickels</numerusform>
-            <numerusform>%n aktywnych połączeń do sieci HoboNickels</numerusform>
+            <numerusform>%n aktywne połączenie do sieci SwissCoin</numerusform>
+            <numerusform>%n aktywnych połączeń do sieci SwissCoin</numerusform>
         </translation>
     </message>
     <message>
@@ -621,8 +621,8 @@ Address: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid HoboNickels address or malformed URI parameters.</source>
-        <translation>URI nie mógł zostać sparsowany! To może być spowodowane przez zły adres HoboNickels lub źle utworzone parametry URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid SwissCoin address or malformed URI parameters.</source>
+        <translation>URI nie mógł zostać sparsowany! To może być spowodowane przez zły adres SwissCoin lub źle utworzone parametry URI.</translation>
     </message>
     <message>
         <location line="+16"/>
@@ -656,8 +656,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. HoboNickels can no longer continue safely and will quit.</source>
-        <translation>Straszny błąd się wydarzył. HoboNickels nie może dłużej kontynuować bezpiecznie i się wyłączy.</translation>
+        <source>A fatal error occurred. SwissCoin can no longer continue safely and will quit.</source>
+        <translation>Straszny błąd się wydarzył. SwissCoin nie może dłużej kontynuować bezpiecznie i się wyłączy.</translation>
     </message>
 </context>
 <context>
@@ -722,8 +722,8 @@ Address: %4
     </message>
     <message>
         <location line="+5"/>
-        <source>The entered address &quot;%1&quot; is not a valid HoboNickels address.</source>
-        <translation>Wpisany adres &quot;%1&quot; nie jest właściwym adresem HoboNickels.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid SwissCoin address.</source>
+        <translation>Wpisany adres &quot;%1&quot; nie jest właściwym adresem SwissCoin.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -741,8 +741,8 @@ Address: %4
     <message>
         <location filename="../guiutil.cpp" line="+419"/>
         <location line="+12"/>
-        <source>HoboNickels-Qt</source>
-        <translation>HoboNickels-Qt</translation>
+        <source>SwissCoin-Qt</source>
+        <translation>SwissCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -804,13 +804,13 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start HoboNickels after logging in to the system.</source>
-        <translation>Włącz HoboNickels automatycznie po zalogowaniu się do systemu.</translation>
+        <source>Automatically start SwissCoin after logging in to the system.</source>
+        <translation>Włącz SwissCoin automatycznie po zalogowaniu się do systemu.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start HoboNickels on system login</source>
-        <translation>&amp;Włącz HoboNickels po starcie systemu</translation>
+        <source>&amp;Start SwissCoin on system login</source>
+        <translation>&amp;Włącz SwissCoin po starcie systemu</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -829,8 +829,8 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the HoboNickels client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatycznie otwórz port HoboNickels na routerze. To działa tylko gdy router obsługuje UPnP i jest to włączone.</translation>
+        <source>Automatically open the SwissCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatycznie otwórz port SwissCoin na routerze. To działa tylko gdy router obsługuje UPnP i jest to włączone.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -839,8 +839,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the HoboNickels network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Podłącz się do sieci HoboNickels przez SOCKS proxy (e.g. np łącząc się przez Tor).</translation>
+        <source>Connect to the SwissCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Podłącz się do sieci SwissCoin przez SOCKS proxy (e.g. np łącząc się przez Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -914,8 +914,8 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting HoboNickels.</source>
-        <translation>Jezyk UI może być wybrany tutaj. Ustawienie zacznie działać po restarcie HoboNickels.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting SwissCoin.</source>
+        <translation>Jezyk UI może być wybrany tutaj. Ustawienie zacznie działać po restarcie SwissCoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -929,8 +929,8 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to Show HoboNickels addresses in the transaction list or not.</source>
-        <translation>Czy pokazać adresy HoboNickels na liście transakcji czy nie.</translation>
+        <source>Whether to Show SwissCoin addresses in the transaction list or not.</source>
+        <translation>Czy pokazać adresy SwissCoin na liście transakcji czy nie.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -966,8 +966,8 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting HoboNickels.</source>
-        <translation>To ustawienie zadziała po restarcie HoboNickels.</translation>
+        <source>This setting will take effect after restarting SwissCoin.</source>
+        <translation>To ustawienie zadziała po restarcie SwissCoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -985,8 +985,8 @@ Address: %4
     <message>
         <location line="+33"/>
         <location line="+183"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HoboNickels network after a connection is established, but this process has not completed yet.</source>
-        <translation>Pokazana informacja może być nieaktualna.Twój portfel automatycznie synchornizuje się z siecią HoboNickels po ustanowieniu połączenia, ale ten proces nie został zakończony.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the SwissCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Pokazana informacja może być nieaktualna.Twój portfel automatycznie synchornizuje się z siecią SwissCoin po ustanowieniu połączenia, ale ten proces nie został zakończony.</translation>
     </message>
     <message>
         <location line="-141"/>
@@ -1201,8 +1201,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the HoboNickels-Qt help message to get a list with possible HoboNickels command-line options.</source>
-        <translation>Pokaż pomoc HoboNickels-Qt by zdobyć opcje linii komend HoboNickels.</translation>
+        <source>Show the SwissCoin-Qt help message to get a list with possible SwissCoin command-line options.</source>
+        <translation>Pokaż pomoc SwissCoin-Qt by zdobyć opcje linii komend SwissCoin.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1221,13 +1221,13 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>HoboNickels - Debug window</source>
-        <translation>HoboNickels - Okno debugowania</translation>
+        <source>SwissCoin - Debug window</source>
+        <translation>SwissCoin - Okno debugowania</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>HoboNickels Core</source>
-        <translation>HoboNickels Jądro</translation>
+        <source>SwissCoin Core</source>
+        <translation>SwissCoin Jądro</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1236,8 +1236,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the HoboNickels debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otwórz plik z logami debugowania HoboNickels z obecnego folderu danych. To może zając parę sekund dla dużych plików z logami.</translation>
+        <source>Open the SwissCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otwórz plik z logami debugowania SwissCoin z obecnego folderu danych. To może zając parę sekund dla dużych plików z logami.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1246,8 +1246,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the HoboNickels RPC console.</source>
-        <translation>Witaj w konsoli RPC HoboNickels RPC.</translation>
+        <source>Welcome to the SwissCoin RPC console.</source>
+        <translation>Witaj w konsoli RPC SwissCoin RPC.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1430,8 +1430,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a valid HoboNickels address</source>
-        <translation>Podaj poprawny adres HoboNickels</translation>
+        <source>Enter a valid SwissCoin address</source>
+        <translation>Podaj poprawny adres SwissCoin</translation>
     </message>
 </context>
 <context>
@@ -1491,8 +1491,8 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this HoboNickels address</source>
-        <translation>Podpisz wiadomość by potwierdzić swój adres HoboNickels</translation>
+        <source>Sign the message to prove you own this SwissCoin address</source>
+        <translation>Podpisz wiadomość by potwierdzić swój adres SwissCoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -1523,8 +1523,8 @@ Address: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified HoboNickels address</source>
-        <translation>Zweryfikuj wiadomość dla pewności, że została podpisana z podanym adresem HoboNickels</translation>
+        <source>Verify the message to ensure it was signed with the specified SwissCoin address</source>
+        <translation>Zweryfikuj wiadomość dla pewności, że została podpisana z podanym adresem SwissCoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -1534,8 +1534,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a valid HoboNickels address</source>
-        <translation>Podaj właściwy adres HoboNickels</translation>
+        <source>Enter a valid SwissCoin address</source>
+        <translation>Podaj właściwy adres SwissCoin</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1544,8 +1544,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter HoboNickels signature</source>
-        <translation>Podaj podpis HoboNickels</translation>
+        <source>Enter SwissCoin signature</source>
+        <translation>Podaj podpis SwissCoin</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2115,8 +2115,8 @@ Address: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+82"/>
-        <source>HoboNickels version</source>
-        <translation>HoboNickels wersja</translation>
+        <source>SwissCoin version</source>
+        <translation>SwissCoin wersja</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2145,13 +2145,13 @@ Address: %4
     </message>
     <message>
         <location line="+23"/>
-        <source>Specify configuration file (default: HoboNickels.conf)</source>
-        <translation>Podaj plik konfiguracyjny (podstawowo: HoboNickels.conf)</translation>
+        <source>Specify configuration file (default: SwissCoin.conf)</source>
+        <translation>Podaj plik konfiguracyjny (podstawowo: SwissCoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: HoboNickelsd.pid)</source>
-        <translation>Podaj plik pid (podstawowo: HoboNickelsd.pid)</translation>
+        <source>Specify pid file (default: SwissCoind.pid)</source>
+        <translation>Podaj plik pid (podstawowo: SwissCoind.pid)</translation>
     </message>
     <message>
         <location line="-47"/>
@@ -2305,8 +2305,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong HoboNickels will not work properly.</source>
-        <translation>Uwaga: Sprawdź czy data i czas twojego komputera są właścwie! Jeśli twój zegar jest zły HoboNickels nie zadziała właściwie.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong SwissCoin will not work properly.</source>
+        <translation>Uwaga: Sprawdź czy data i czas twojego komputera są właścwie! Jeśli twój zegar jest zły SwissCoin nie zadziała właściwie.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2540,13 +2540,13 @@ Address: %4
     </message>
     <message>
         <location line="-131"/>
-        <source>Cannot obtain a lock on data directory %s.  HoboNickels is probably already running.</source>
-        <translation>Nie mogę zdobyć zamknięcia na folderze danych %s.  HoboNickels pewnie już działa.</translation>
+        <source>Cannot obtain a lock on data directory %s.  SwissCoin is probably already running.</source>
+        <translation>Nie mogę zdobyć zamknięcia na folderze danych %s.  SwissCoin pewnie już działa.</translation>
     </message>
     <message>
         <location line="+57"/>
-        <source>HoboNickels</source>
-        <translation>HoboNickels</translation>
+        <source>SwissCoin</source>
+        <translation>SwissCoin</translation>
     </message>
     <message>
         <location line="+77"/>
@@ -2580,13 +2580,13 @@ Address: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of HoboNickels</source>
-        <translation>Błąd wczytywania wallet.dat: Portfel wymaga nowszej wersji HoboNickels</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of SwissCoin</source>
+        <translation>Błąd wczytywania wallet.dat: Portfel wymaga nowszej wersji SwissCoin</translation>
     </message>
     <message>
         <location line="+73"/>
-        <source>Wallet needed to be rewritten: restart HoboNickels to complete</source>
-        <translation>Portfel musi zostać przepisany: zrestartuj HoboNickels by wykonać</translation>
+        <source>Wallet needed to be rewritten: restart SwissCoin to complete</source>
+        <translation>Portfel musi zostać przepisany: zrestartuj SwissCoin by wykonać</translation>
     </message>
     <message>
         <location line="-75"/>
@@ -2655,8 +2655,8 @@ Address: %4
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. HoboNickels is probably already running.</source>
-        <translation>Nie można zbindowa do %s na tym komputerze. HoboNickels pewnie już działa.</translation>
+        <source>Unable to bind to %s on this computer. SwissCoin is probably already running.</source>
+        <translation>Nie można zbindowa do %s na tym komputerze. SwissCoin pewnie już działa.</translation>
     </message>
     <message>
         <location line="+55"/>

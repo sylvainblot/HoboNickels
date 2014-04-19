@@ -139,7 +139,7 @@ OBJS= \
     obj/scrypt-x86_64.o
 
 
-all: HoboNickelsd
+all: SwissCoind
 
 #
 # LevelDB support
@@ -157,8 +157,8 @@ ifneq (${USE_LEVELDB}, 1)
 OBJS += obj/txdb-bdb.o
 endif
 
-test check: test_HoboNickels FORCE
-	./test_HoboNickels
+test check: test_SwissCoin FORCE
+	./test_SwissCoin
 
 # auto-generated dependencies:
 -include obj/*.P
@@ -185,7 +185,7 @@ obj/%.o: %.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-HoboNickelsd: $(OBJS:obj/%=obj/%)
+SwissCoind: $(OBJS:obj/%=obj/%)
 	$(LINK) $(xCXXFLAGS) -o $@ $^ $(xLDFLAGS) $(LIBS)
 
 TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
@@ -197,11 +197,11 @@ obj-test/%.o: test/%.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-test_HoboNickels: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
+test_SwissCoin: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 	$(LINK) $(xCXXFLAGS) -o $@ $(LIBPATHS) $^ -Wl,-B$(LMODE) -lboost_unit_test_framework $(xLDFLAGS) $(LIBS)
 
 clean:
-	-rm -f HoboNickelsd test_HoboNickels
+	-rm -f SwissCoind test_SwissCoin
 	-rm -f obj/*.o
 	-rm -f obj-test/*.o
 	-rm -f obj/*.P
