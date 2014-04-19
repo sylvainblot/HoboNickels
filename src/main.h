@@ -31,13 +31,13 @@ static const unsigned int MAX_BLOCK_SIGOPS = MAX_BLOCK_SIZE/50;
 static const unsigned int MAX_ORPHAN_TRANSACTIONS = MAX_BLOCK_SIZE/100;
 static const unsigned int MAX_INV_SZ = 50000;
 static const int64 MIN_TX_FEE = 0.1 * CENT;
-static const int64 MIN_RELAY_TX_FEE = 0.1 * CENT;
-static const int64 MAX_MONEY = 120000000 * COIN;
-static const int64 MAX_MINT_PROOF_OF_WORK = 5 * COIN;
-static const int64 MAX_MINT_PROOF_OF_WORK_LEGACY = 5 * COIN;
-static const int64 MAX_MINT_PROOF_OF_STAKE = 10 * CENT; //Incorrect value Too small
-static const int64 MAX_MINT_PROOF_OF_STAKE_FIX = 1000 * CENT;//Incorrect value Too big
-static const int64 MAX_MINT_PROOF_OF_STAKE_FIX2 = 100 * CENT; //Correct just right
+static const int64 MIN_RELAY_TX_FEE = 0.3 * CENT;
+static const int64 MAX_MONEY = 333333333333 * COIN;
+static const int64 MAX_MINT_PROOF_OF_WORK = 333 * COIN;
+static const int64 MAX_MINT_PROOF_OF_WORK_LEGACY = 333 * COIN;
+static const int64 MAX_MINT_PROOF_OF_STAKE = 99 * CENT; //Incorrect value Too small
+static const int64 MAX_MINT_PROOF_OF_STAKE_FIX = 9999 * CENT;//Incorrect value Too big
+static const int64 MAX_MINT_PROOF_OF_STAKE_FIX2 = 999 * CENT; //Correct just right
 
 static const int64 MIN_TXOUT_AMOUNT = MIN_TX_FEE;
 static const unsigned int PROTOCOL_SWITCH_TIME = 1371686400; // 20 Jun 2013 00:00:00
@@ -57,8 +57,8 @@ static const int fHaveUPnP = true;
 static const int fHaveUPnP = false;
 #endif
 
-static const uint256 hashGenesisBlockOfficial("0x000009ea5ef5019446b315e7e581fc2ea184315ed46c9ddeadc8aa9442deedc9");
-static const uint256 hashGenesisBlockTestNet("0x0000f9e0292f278190e4d58cd1e1e9a32b7466c8092bd2371ffc80b06f8eca4a");
+static const uint256 hashGenesisBlockOfficial("0x");
+static const uint256 hashGenesisBlockTestNet("0x");
 
 inline int64 PastDrift(int64 nTime)   { return nTime - 2 * 60 * 60; } // up to 2 hours from the past
 inline int64 FutureDrift(int64 nTime) { return nTime + 2 * 60 * 60; } // up to 2 hours from the future
